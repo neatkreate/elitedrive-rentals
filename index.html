@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EliteDrive Rentals</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">EliteDrive</div>
+
+            <!-- Hamburger -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cars.html">Cars</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Rent Your Dream Car Today</h1>
+            <p>Affordable. Reliable. Comfortable. Your journey starts here.</p>
+            <a href="cars.html" class="hero-btn">Browse Cars</a>
+        </div>
+    </section>
+
+    <!-- Quick Search Section -->
+    <section class="search-box">
+        <h2>Quick Car Search</h2>
+        <form>
+            <input type="text" placeholder="Pickup Location">
+            <input type="date" placeholder="Select Date">
+            <input type="time" placeholder="Select Time">
+            <select id="car-type" aria-label="Select Car Type" title="Select Car Type">
+                <option>Select Car Type</option>
+                <option>Sedan</option>
+                <option>SUV</option>
+                <option>Luxury</option>
+                <option>4x4</option>
+            </select>
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <!-- Popular Cars -->
+    <section class="popular-cars">
+        <h2>Popular Cars</h2>
+        <div class="car-list">
+            <div class="car-card">
+                <img src="images/toyota-corolla.jpg" alt="">
+                <h3>Toyota Corolla</h3>
+                <p>$35/day</p>
+               <a href="corolla.html" class="car-btn">View Details</a>
+
+            </div>
+
+            <div class="car-card">
+                <img src="images/benz-c300.jpg" alt="">
+                <h3>Mercedes Benz C300</h3>
+                <p>$85/day</p>
+                <a href="c300.html" class="car-btn">View Details</a>
+
+            </div>
+
+            <div class="car-card">
+                <img src="images/sport.jpg" alt="">
+                <h3>Range Rover Sport</h3>
+                <p>$120/day</p>
+                <a href="range.html" class="car-btn">View Details</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us">
+        <h2>Why Choose Us?</h2>
+        <div class="features">
+            <div class="feature-box">
+                <h3>Affordable Pricing</h3>
+                <p>We offer competitive rates that fit every budget.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>Well Maintained Cars</h3>
+                <p>Every vehicle is serviced and kept in top condition.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>24/7 Support</h3>
+                <p>We’re always available to assist you anytime.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>Easy Booking</h3>
+                <p>A simple and fast booking process — no stress.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 EliteDrive Rentals. All rights reserved.</p>
+    </footer>
+
+    <!-- JS for Mobile Navbar -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>

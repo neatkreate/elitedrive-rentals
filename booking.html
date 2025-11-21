@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Car - EliteDrive Rentals</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">EliteDrive</div>
+
+            <!-- Hamburger -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cars.html">Cars</a></li>
+                <li><a class="active" href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Booking Form Section -->
+    <section class="booking-section">
+        <h2>Book Your Car</h2>
+        <p>Please fill in the form below to place your booking request.</p>
+
+        <form class="booking-form">
+            <input type="text" placeholder="Full Name" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <input type="email" placeholder="Email Address">
+
+            <select required>
+                <option>Select Car</option>
+                <option>Toyota Corolla</option>
+                <option>Mercedes Benz C300</option>
+                <option>Range Rover Sport</option>
+                <option>Honda Civic</option>
+                <option>Hyundai Elantra</option>
+                <option>Toyota Land Cruiser</option>
+            </select>
+
+            <label>Pickup Date</label>
+            <input type="date" required>
+
+            <label>Pickup Time</label>
+            <input type="time" required>
+
+            <label>Return Date</label>
+            <input type="date" required>
+
+            <label>Return Time</label>
+            <input type="time" required>
+
+            <input type="text" placeholder="Pickup Location" required>
+
+            <textarea placeholder="Additional Notes" rows="4"></textarea>
+
+            <button type="submit">Submit Booking</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 EliteDrive Rentals. All rights reserved.</p>
+    </footer>
+
+    <!-- JS for Mobile Navbar -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>

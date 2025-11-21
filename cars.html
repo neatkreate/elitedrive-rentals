@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Cars - EliteDrive Rentals</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">EliteDrive</div>
+
+            <!-- Hamburger -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="cars.html">Cars</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Cars List -->
+    <section class="popular-cars" style="margin-top: 40px;">
+        <h2>Available Cars for Rent</h2>
+
+        <div class="car-list">
+
+            <!-- CAR 1 -->
+            <div class="car-card">
+                <img src="images/benz-c300.jpg" alt="">
+                <h3>Mercedes Benz C300</h3>
+                <p>$85/day</p>
+                <a href="c300.html" class="car-btn">View Details</a>
+
+            </div>
+
+            <!-- CAR 2 -->
+            <div class="car-card">
+                <img src="images/toyota-corolla.jpg" alt="">
+                <h3>Toyota Corolla</h3>
+                <p>$35/day</p>
+                <a href="corolla.html" class="car-btn">View Details</a>
+
+            </div>
+
+            <!-- CAR 3 -->
+            <div class="car-card">
+                <img src="images/sport.jpg" alt="">
+                <h3>Range Rover Sport</h3>
+                <p>$120/day</p>
+                <a href="range.html" class="car-btn">View Details</a>
+            </div>
+
+            <!-- CAR 4 -->
+            <div class="car-card">
+                <img src="images/honda.jpg" alt="">
+                <h3>Honda Civic</h3>
+                <p>$30/day</p>
+                <a href="civic.html" class="car-btn">View Details</a>
+            </div>
+
+            <!-- CAR 5 -->
+            <div class="car-card">
+                <img src="images/Hyundai-Elantra.jpg" alt="">
+                <h3>Hyundai Elantra</h3>
+                <p>$28/day</p>
+                <a href="elentra.html" class="car-btn">View Details</a>
+            </div>
+
+            <!-- CAR 6 -->
+            <div class="car-card">
+                <img src="images/toyota-land-cruiser.jpg" alt="">
+                <h3>Toyota Land Cruiser</h3>
+                <p>$150/day</p>
+                <a href="land.html" class="car-btn">View Details</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 EliteDrive Rentals. All rights reserved.</p>
+    </footer>
+
+    <!-- JS for Mobile Navbar -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>

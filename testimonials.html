@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials | EliteDrive Rentals</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">EliteDrive</div>
+
+            <!-- Hamburger -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cars.html">Cars</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="testimonials.html" class="active">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2 class="section-title">What Our Customers Say</h2>
+
+        <div class="testimonials-container">
+
+            <div class="testimonial-card">
+                <p>“EliteDrive has the best cars in Sunyani. Smooth process and great customer service.”</p>
+                <h4>- Samuel Owusu</h4>
+            </div>
+
+            <div class="testimonial-card">
+                <p>“Affordable prices and a very clean vehicle. I’ll definitely book again.”</p>
+                <h4>- Ama Serwaa</h4>
+            </div>
+
+            <div class="testimonial-card">
+                <p>“Easy booking, on-time delivery, and friendly staff. Highly recommended!”</p>
+                <h4>- Kwame Mensah</h4>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 EliteDrive Rentals. All rights reserved.</p>
+    </footer>
+
+    <!-- JS for Mobile Navbar -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>

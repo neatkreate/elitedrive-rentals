@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | EliteDrive Rentals</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">EliteDrive</div>
+
+            <!-- Hamburger -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cars.html">Cars</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="about-container">
+            <h2>About EliteDrive Rentals</h2>
+            <p>
+                EliteDrive Rentals is a modern and reliable car rental company located in Sunyani.
+                We provide well-maintained, affordable, and premium vehicles for everyday travel,
+                business trips, and special events.
+            </p>
+
+            <p>
+                Whether you're traveling for work or pleasure, our mission is simple:
+                <strong>make transportation smooth, safe, and stress-free</strong>. With flexible pricing,
+                easy booking, and round-the-clock customer support, we ensure you drive confidently.
+            </p>
+
+            <h3>Our Values</h3>
+            <ul class="values-list">
+                <li>✔️ Excellent Customer Service</li>
+                <li>✔️ Clean & Efficient Vehicles</li>
+                <li>✔️ Affordable Pricing</li>
+                <li>✔️ Transparent Process</li>
+                <li>✔️ Fast & Easy Booking</li>
+            </ul>
+
+            <h3>Why We Stand Out</h3>
+            <p>
+                From economy cars to luxury SUVs, we cater to every kind of traveler.
+                Our team ensures every car is regularly serviced, fully insured,
+                and ready for the road.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 EliteDrive Rentals. All rights reserved.</p>
+    </footer>
+
+    <!-- JS for Mobile Navbar -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
